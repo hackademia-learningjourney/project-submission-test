@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI-learning project</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between; /* Space between the image and text */
+      align-items: center; /* Align items vertically centered */
+      background-color: #333;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      padding: 0;
+      flex: 1; /* Allow text to take available space */
+    }
+
+    header img {
+      max-width: 150px; /* Adjust width as needed */
+      height: auto;
+      flex: 0; /* Prevent the image from growing */
+      border-radius: 122px; /* Rounded corners */
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 600px;
+      margin: auto;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin: 1rem 0 0.5rem;
+      font-weight: bold;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    input[type="submit"] {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #333;
+      color: #fff;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <img src="https://cdn.dribbble.com/users/2302913/screenshots/14269824/media/455d819724aa0ace4dab2ce7830f26d3.jpg" alt="Project Image">
+        <h1>AI-learning project</h1>
+    </header>
+    <main>
+        <form method="POST">
+            {% csrf_token %}
+            <label for="attendance">Total attended days</label>
+            <input type="text" name="attendance" id="attendance" /><br />
+            <label for="absent">Total Absent days</label>
+            <input type="text" name="absent" id="absent" /><br />
+            <label for="released">Total released/early dismissal days</label>
+            <input type="text" name="released" id="released" /><br />
+            <input type="submit" value="Submit" />
+        </form>
+    </main>
+    <footer>
+        <p>&#169; copyrighted by project owner</p>
+    </footer>
+</body>
+</html>

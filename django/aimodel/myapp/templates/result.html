@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-learning project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        header h1 {
+            margin: 0;
+            padding: 0;
+            flex: 1; 
+        }
+
+        header img {
+            max-width: 150px; 
+            height: auto;
+            flex: 0; 
+            border-radius: 122px; 
+        }
+        
+        main {
+            padding: 2rem;
+            max-width: 600px;
+            margin: auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        label {
+            display: block;
+            margin: 1rem 0 0.5rem;
+            font-weight: bold;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: #fff;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: red;
+        }
+        
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #007bff; 
+            color: #fff; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        
+        a:hover {
+            background-color: #0056b3; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://cdn.dribbble.com/users/2302913/screenshots/14269824/media/455d819724aa0ace4dab2ce7830f26d3.jpg" alt="Project Image">
+        <h1>AI-learning project</h1>
+    </header>
+    <main>
+        <h1>Performance Result</h1>
+        <div class="result">
+            <p>{{ result }}</p>
+        </div>
+        <a href="{% url 'home' %}">Go Back</a>
+    </main>
+    <footer>
+        <p>&#169; copyrighted by project owner</p>
+    </footer>
+</body>
+</html>
