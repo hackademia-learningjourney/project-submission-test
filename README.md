@@ -1,4 +1,4 @@
-# name of the project: student_finalprediction_prediction_model:
+# name of the project: student_finalperformance_prediction_model:
 group name: geeks
 
 **group member**:
