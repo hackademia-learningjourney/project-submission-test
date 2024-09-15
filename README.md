@@ -1,4 +1,4 @@
-# student_finalprediction_prediction_model:
+# name of the project: student_finalprediction_prediction_model:
 group name: geeks
 
 **group member**:
@@ -8,7 +8,21 @@ manoj oli
 trishandra jung kocher
 
 
+### Tech Stack Used
+- **Libraries:**
+  - `pandas`: For data manipulation and analysis.
+  - `numpy`: For numerical operations.
+  - `scikit-learn (sklearn)`: For machine learning.
+  - `joblib`: For saving and loading machine learning models.
+  - `tensorflow`: For deep learning models and neural network implementations (if used).
+  - `matplotlib`: For data visualization.
+  
+- **Framework:**
+  - **Django**: As the web framework for handling backend logic, routing, and integration with the machine learning model.
 
+- **Functionalities:**
+  - Data preprocessing, model training, evaluation, and visualization.
+  - Serving predictions and results via a Django-powered web application.
 
 
 This Django web application predicts student performance based on their attendance, absenteeism, and early dismissal rates using a pre-trained linear regression model.
