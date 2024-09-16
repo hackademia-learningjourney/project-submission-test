@@ -3,7 +3,7 @@ group name: geeks
 
 **group member**:
 sudarshan giri
-aaysusha shrestha 
+aayusha shrestha 
 manoj oli 
 trishandra jung kocher
 
